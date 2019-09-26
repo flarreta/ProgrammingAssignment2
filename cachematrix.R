@@ -1,4 +1,4 @@
-## It might be ineficient to re calculate in a function when a value has already being calculated. 
+## It might be ineficient to re-calculate in a function when a value has already being calculated. 
 ## The following functions uses inverse matrixes already calculated and saved as cached data trying 
 ## to make the process of obtaining the inverse of a matrix more agile.
 
@@ -37,8 +37,7 @@ cacheSolve <- function(x, ...) {
     m
 }
 
+#Example
 j <- matrix(1:4, 2, 2)
-
-
 k <- makeCacheMatrix(j)
 cacheSolve(k)
