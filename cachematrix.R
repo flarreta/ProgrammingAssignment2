@@ -2,8 +2,7 @@
 ## The following functions uses inverse matrixes already calculated and saved as cached data trying 
 ## to make the process of obtaining the inverse of a matrix more agile.
 
-## The function makeCacheMatrix creates an "special" vector and creates a function that gets the mean 
-##of it´s values.
+## The function makeCacheMatrix creates an "special" matrix and creates a function that gets the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -21,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The function cacheSolve check if the mean of the "special" vector has been calculated and cached.
-## If it has been already calculated, it returns the cached mean, if it has not been calculated, 
+## The function cacheSolve check if the inverse of the "special" matrix has been calculated and cached.
+## If it has been already calculated, it returns the cached inverse, if it has not been calculated, 
 ## it finds it.
 
 cacheSolve <- function(x, ...) {
